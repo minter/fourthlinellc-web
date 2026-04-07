@@ -1,0 +1,181 @@
+---
+---
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Fourth Line LLC - Technology and Consulting">
+  <meta name="author" content="Fourth Line LLC">
+  <title>Fourth Line LLC - Technology and Consulting</title>
+  <link rel="icon" href="/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;600;700;900&family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <style>
+    html {
+      height: 100%;
+    }
+
+    body {
+      height: 100%;
+      min-height: 35rem;
+      position: relative;
+      font-family: 'Source Sans 3', 'Source Sans Pro', sans-serif;
+      font-weight: 300;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Merriweather', serif;
+      font-weight: 700;
+    }
+
+    video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: 0;
+    }
+
+    @media (pointer: coarse) and (hover: none) {
+      body {
+        background: url("/img/bg-mobile-fallback.jpg") #002E66 no-repeat center center scroll;
+        background-size: cover;
+      }
+      body video {
+        display: none;
+      }
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #cd9557;
+      opacity: 0.7;
+      z-index: 1;
+    }
+
+    .masthead {
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 3rem;
+      z-index: 2;
+    }
+
+    .masthead .masthead-bg {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      min-height: 35rem;
+      height: 100%;
+      background-color: rgba(0, 46, 102, 0.8);
+      transform: skewY(4deg);
+      transform-origin: bottom right;
+    }
+
+    .masthead-content {
+      position: relative;
+      color: white;
+      padding: 5rem 1rem;
+    }
+
+    .masthead-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .masthead-content h1 img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .masthead-content p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .masthead-content p strong {
+      font-weight: 700;
+    }
+
+    .btn-contact {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 1rem 2rem;
+      color: white;
+      background-color: #cd9557;
+      border: 1px solid #cd9557;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .btn-contact:hover {
+      background-color: #ba7c37;
+      border-color: #ba7c37;
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 15px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      .masthead {
+        height: 100%;
+        min-height: 0;
+        width: 40.5rem;
+        padding-bottom: 0;
+      }
+      .masthead .masthead-bg {
+        min-height: 0;
+        transform: skewX(-8deg);
+        transform-origin: top right;
+      }
+      .masthead-content {
+        padding: 0 10rem 0 3rem;
+      }
+      .masthead-content h1 {
+        font-size: 3.5rem;
+      }
+      .masthead-content p {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <video playsinline autoplay muted loop>
+    <source src="/mp4/bg.mp4" type="video/mp4">
+  </video>
+
+  <div class="masthead">
+    <div class="masthead-bg"></div>
+    <div class="container">
+      <div class="masthead-content">
+        <h1><img src="/img/logo.png" alt="Fourth Line LLC" /></h1>
+        <p>We build software, and help you make the most out of technology. If you're interested in learning more, drop us an email.</p>
+        <a class="btn-contact" href="mailto:wade@fourthlinellc.com">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
