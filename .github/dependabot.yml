@@ -4,7 +4,27 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+      day: "monday"
+    # Batch all routine version updates into a single weekly PR.
+    # Security updates are not affected by groups/schedule and open immediately.
+    groups:
+      npm-weekly:
+        applies-to: version-updates
+        patterns:
+          - "*"
+    # Let new releases bake on the registry before proposing them.
+    cooldown:
+      default-days: 7
+
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
+      day: "monday"
+    groups:
+      actions-weekly:
+        applies-to: version-updates
+        patterns:
+          - "*"
+    cooldown:
+      default-days: 7
