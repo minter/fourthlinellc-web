@@ -12,7 +12,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^7.4.8"
+    "astro": "^7.4.12"
   },
   "allowScripts": {
     "esbuild@0.28.1": true,
